@@ -1,0 +1,520 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+
+/* css for header  */
+
+.header{
+    height: 90px;
+    width: 100%;
+    /* background-color: rgba(16, 128, 234, 1); */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.container{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+
+}
+
+.header_container{
+    justify-content: space-between;    
+}
+
+.logo{
+    height: 80px;
+    width: 15%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.logo img{
+    height: 65px;
+    width: 100%;
+    /* border-top-left-radius: 48%;
+    border-bottom-right-radius: 38%; */
+    padding-right: 8px;
+    padding-top: 8px;
+    background-color: rgba(0,0,0,0.8);
+}
+.logo_text{
+    font-size: 26px;
+    font-family: segoe UI;
+    font-weight: bold;
+    color: rgba(135, 230, 122, 0.664);
+    text-transform: uppercase;
+    padding-right: 8px;
+    padding-top: 8px;
+    /* background-color: red; */
+}
+
+.nav{
+    height: 90px;
+    width: 40%;
+    /* background-color: green; */
+    display: flex;
+}
+
+
+.nav-item{
+    width: 20%;
+    height: 90px;
+    /* background-color: gray; */
+    font-family: segoe UI;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+    color:whitesmoke;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav-item:hover {
+    background-color: rgb(16, 16, 17);
+    color: white;
+    
+}
+
+.banner{
+    height: 95vh;
+    width: 100%;
+    /* background-color: gray; */
+    background-size: cover;
+    background-image: url('backgroundimg.jpg');
+}
+
+.overlay{
+    height: 95vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+}
+
+.banner_text{
+    height: 350px;
+    width: 50%;
+    background-color: rgba(135, 230, 122, 0.664);
+    font-family: segoe UI;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color:black;
+}
+
+.banner_title{
+    font-size: 50px;
+    margin-bottom: 15px;
+    
+}
+
+.banner_desc{
+    margin-bottom: 30px;
+}
+
+.padd{
+    padding: 50px;
+    /* background-color: red; */
+}
+
+.banner_btn{
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color:transparent;
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: segoe ui;
+    border:3px solid rgb(59, 75, 33);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.banner_btn:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(16, 234, 100);
+}
+
+/* css for programs  */
+
+.programs{
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color:rgba(17, 16, 16, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: segoe UI;
+    color: rgba(231, 241, 229, 0.664);
+    background-size: cover;
+    background-image: url('backgroundimg.jpg');
+}
+
+.programs_container{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.program{
+    height: 400px;
+    width: 47%;
+    background-color: black;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 2px solid  rgba(135, 230, 122, 0.664);
+}
+
+
+.program_img{
+    width: 40%;
+    height: 400px;
+    /* background-color: blue; */
+    display: flex;
+    overflow: hidden;
+    border-radius: 12px;
+    border-right: 3px solid rgba(135, 230, 122, 0.664);
+}
+
+.program_details{
+    width: 60%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.program_padd{
+    padding: 20px;
+}
+
+
+.program_btn{
+
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: rgba(135, 230, 122, 0.664);
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-family: segoe ui;
+    border:none;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.program_title{
+    margin-bottom: 15px;
+}
+
+.program_desc{
+    margin-bottom: 30px;
+}
+
+/* css for about  */
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.61);
+    display: flex;
+    flex-direction: column;
+    font-family: segoe UI;
+    align-items: center;
+}
+
+.about_container{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 10px;
+    line-height: 40px;
+    display: inline;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.start_text{
+    font-size: 40px;
+   
+    color: rgb(218, 233, 216);
+}
+
+
+/* css for highlights  */
+
+.highlight{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100% impotant;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(135, 230, 122, 0.664);
+}
+
+.highlight_container{
+    justify-content: space-between;
+}
+
+
+.high_ele{
+    width: 22%;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Segoe UI;
+    text-align: center;
+    color: rgba(233, 252, 230, 0.664);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.high_ele:hover{
+    transform: translateY(-8px);
+
+}
+
+.high_title{
+    font-size: 60px;
+}
+
+.high_desc{
+    font-size: 25px;
+}
+
+/* css for quote  */
+
+.quote{
+    height: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    font-family: Segoe UI;
+    color: white;
+}
+
+.quote_container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote_title{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.quote_btn{
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    border: 4px solid white;
+    background-color: rgba(135, 230, 122, 0.664);
+    color: rgb(243, 234, 234);
+    font-weight: bold;
+    font-family: segoe ui;
+    border:none;
+    cursor: pointer;
+    transition: .5s;
+}
+.quote_btn:hover{
+    transform: translateY(8px);
+    background-color: yellow;
+    color: rgb(17, 15, 15);
+}
+
+
+
+/* css for portfolio  */
+
+.portfolio{
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+    font-family: segoe UI;
+}
+
+.portfolio_container{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.project{
+    width: 25%;
+    height: 280px;
+    background-color: red;
+    display: flex;
+    overflow: hidden;
+}
+
+.project_1{
+    background-image: url('https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+}
+
+.project_2{
+    background-image: url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    align-items: flex-end;
+}
+.project_3{
+    background-image: url('https://images.pexels.com/photos/315788/pexels-photo-315788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+}
+.project_4{
+    background-image: url('https://images.pexels.com/photos/4450334/pexels-photo-4450334.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    align-items: flex-end;
+}
+.project_5{
+    background-image: url('https://images.pexels.com/photos/2570139/pexels-photo-2570139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+}
+.project_6{
+    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    align-items: flex-end;
+}
+.project_7{
+    background-image: url('https://images.pexels.com/photos/674783/pexels-photo-674783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+}
+.project_8{
+    background-image: url('https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.project_title{
+    color: black;
+    width: 100%;
+    height: 140px;
+    text-indent: 30px;
+    line-height: 200px;
+    background-color:rgba(135, 230, 122, 0.664);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.project_title:hover{
+    height: 280px;
+}
+
+/* css for footer  */
+
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(17, 14, 14);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo{
+    height: 240px;
+}
+    
+
+.footer_child{
+    height: 200px;
+    width: 25%;
+    /* background-color: gray; */
+    font-family: segoe UI;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul {
+    margin-top: 40px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: rgba(231, 241, 229, 0.664);
+}
+
+.first{
+    font-size: 22px;
+}
+
+
+.footer_child_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+
+}
+
+.social_container{
+    width: 80%;
+    justify-content: space-between;
+}   
+
+.social_icon{
+    height: 50px;
+    width: 50px;
+    /* background-color: white; */
+    background-size: cover;
+    border-radius: 8px;
+    /* border: 2px solid rgba(135, 230, 122, 0.664); */
+    cursor: pointer;
+    transition: .2s;
+}
+
+.social_icon:hover{
+    transform: translateY(-7px);
+}
+
+.si1{
+    background-image: url('facebook.png');
+}
+
+.si2{
+    background-image: url('google.png');
+}
+
+.si3{
+    background-image: url('linkedin.png');
+}
+
+.si4{
+    background-image: url('instagram.png');
+}
+
+
+
+
+
+
+
